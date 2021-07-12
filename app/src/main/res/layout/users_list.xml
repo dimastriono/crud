@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="25dp">
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/img_avatar"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvId"
+        android:textSize="15dp"
+        android:hint="ID"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/img_avatar"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:text="Nama"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_gravity="center"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/img_avatar"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:text="Last Nama"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLastName"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/img_avatar"
+        android:layout_weight="1"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
